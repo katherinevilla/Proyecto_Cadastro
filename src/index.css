@@ -1,13 +1,107 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+.header{
+  height: 15em;
+  display: flex;
+  background-image: url(https://www.androidguys.com/wp-content/uploads/2016/01/networking-world.png);
+  background-size: cover;
+  background-repeat: no-repeat; 
+  }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+  h6 {
+    color: white;
+    text-align: center;
+  }
+  
+  .logo{ border-radius: 52px;
+  }
+  
+  .nav {
+    background-color: #1267B6;
+    padding: 10px;
+  }
+  
+  .nav-link {
+    color: black;
+  
+  }
+  
+  .header {
+    background-color: white; 
+  }
+  
+  .separacao {
+    background-color:#4e555c;
+    padding: 2px;
+    margin-top: 50px;
+  }
+  
+  .projeto{
+  margin-top: 50px;
+  
+  }
+  
+  .imagem__principal{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 40px;
+  }
+  
+  .imagem__principal:hover{
+    box-shadow: 0 0 1px 1px rgb(0 0 0 / 7%), 0 10px 25px 0 rgb(0 0 0 / 25%);
+  }
+  
+  .card{
+    overflow: hidden; 
+    box-shadow: 0 1px 10px 0 rgba(0 0 0 / 50%);
+    cursor: pointer;
+    border-color:rgb(167, 151, 151);
+    border-radius: 4px;
+  }
+  
+  .card:hover{
+    box-shadow: 0 0 1px 1px rgb(0 0 0 / 7%), 0 10px 15px 0 rgb(0 0 0 / 10%);
+    cursor: point;
+  }
+  
+  .misao{
+    width: 16rem;
+  }
+
+  .registro{
+    width: 13rem;
+  }
+
+  .pessoa,
+  .sobre {
+  margin-top: 50px;
+  }
+
+  .pessoa{
+    margin-top: 50px;
+  }
+
+  .crud{
+  margin-top: 50px;
+  
+  }
+
+  .botao {
+    justify-content: flex-end;
+  }
+  
+  .copyright {
+    background-color: #1267B6;
+    padding: 15px;
+  }
+  
+  footer{
+      height: 15em;
+      display: flex;
+      background-image: url(https://www.androidguys.com/wp-content/uploads/2016/01/networking-world.png);
+      background-size: cover;
+      background-repeat: no-repeat; 
+      margin-top: 60px;
+      }
+  

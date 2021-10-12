@@ -5,6 +5,9 @@ import CrudForm from "./CrudForm";
 import CrudTable from "./CrudTable";
 import Loader from "./Loader";
 import Message from "./Message";
+import Header from "./Header";
+import Home from "./Home";
+import Footer from "./Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const CrudApi = () => {
@@ -74,7 +77,7 @@ const CrudApi = () => {
 
   const deleteData = (id) => {
     let isDelete = window.confirm(
-      `¿Estás seguro de eliminar el registro con el id '${id}'?`
+      `Tem certeza que deseja apagar o registro com o id '${id}'?`
     );
 
     if (isDelete) {
@@ -98,24 +101,16 @@ const CrudApi = () => {
   };
 
   return (
-    <div>
-      <HashRouter basename="lista">
+    <div className="container-fluid">
+      <HashRouter basename="VGKA">
         <header>
-          <nav class="navbar navbar-dark bg-dark">
-          <nav class="nav nav-pills flex-column flex-sm-row justify-content-end">
-            <NavLink to="/" activeClassName="active">
-              {" "}
-              Lista{" "}
-            </NavLink>
-            <NavLink to="/agregar" activeClassName="active">
-              {" "}
-              Agregar{" "}
-            </NavLink>
-            </nav>
-          </nav>
+          <Header />
         </header>
         <Switch>
           <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/dados">
             {loading && <Loader />}
             {error && (
               <Message
@@ -131,7 +126,7 @@ const CrudApi = () => {
               />
             )}
           </Route>
-          <Route exact path="/agregar">
+          <Route exact path="/cadastrar">
             <CrudForm
               createData={createData}
               updateData={updateData}
@@ -140,7 +135,7 @@ const CrudApi = () => {
             />
           </Route>
           <Route exact path="/editar/:id">
-            <h2> Editar Alunos </h2>
+            <br />
             <CrudForm
               createData={createData}
               updateData={updateData}
@@ -149,6 +144,9 @@ const CrudApi = () => {
             />
           </Route>
         </Switch>
+          <div>
+          <Footer />
+          </div>
       </HashRouter>
     </div>
   );

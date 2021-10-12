@@ -1,70 +1,118 @@
 {
-
-"dadospessoais": [
-  {
-    "id": 1,
-    "name": "Abelardo",
-    "cpf": "543.782.467-43",
-    "nascimento": "11/08/1986",
-    "pais": "Venezuela",
-    "genero": "option2",
-    "email": "john@doe.email",
-    "telefone": "1111-1111",
-    "localidade": "Valinhos",
-    "uf": "São Paulo",
-    "escolaridade": "Superior"
-  },
-  {
-    "id": 1,
-    "name": "Gilberto",
-    "cpf": "312.741.237-43",
-    "nascimento": "28/01/1981",
-    "pais": "Colombia",
-    "genero": "masculino",
-    "email": "carlos.email",
-    "telefone": "1111-1111",
-    "localidade": "Manaus",
-    "uf": "São Paulo",
-    "escolaridade": "Superior"
-  },
-  {
-    "name": "katherine",
-    "cpf": "x",
-    "nascimento": "2021-10-06",
-    "pais": "venezuela",
-    "genero": "option2",
-    "email": "x",
-    "telefone": "x",
-    "localidade": "x",
-    "escolaridade": "x",
-    "uf": "x",
-    "id": 1633465051571
-  },
-  {
-    "name": "vanessa",
-    "cpf": "f",
-    "nascimento": "2021-10-11",
-    "pais": "d",
-    "genero": "d",
-    "email": "berdayesvane@hotmail.com",
-    "telefone": "77ahora1",
-    "localidade": "2",
-    "escolaridade": "x",
-    "uf": "d",
-    "id": 1633470105953
-  },
-  {
-    "name": "jsnjksdkdsn",
-    "cpf": "kmlkvsm",
-    "nascimento": "2021-10-19",
-    "pais": "nsv",
-    "genero": "option2",
-    "email": "kxcmksm",
-    "telefone": "lkmsdclsmcl",
-    "localidade": "kjnvkcn",
-    "escolaridade": "vsdnv",
-    "uf": "jnkvsd",
-    "id": 1633649253746
-  }
-]
+  "dadospessoais": [
+    {
+      "id": 1,
+      "name": "Abelardo",
+      "cpf": "543.782.467-43",
+      "nascimento": "11/08/1986",
+      "pais": "Venezuela",
+      "genero": "option2",
+      "email": "john@doe.email",
+      "telefone": "1111-1111",
+      "localidade": "Valinhos",
+      "uf": "São Paulo",
+      "escolaridade": "Superior"
+    },
+    {
+      "id": 1,
+      "name": "Gilberto",
+      "cpf": "312.741.237-43",
+      "nascimento": "28/01/1981",
+      "pais": "Colombia",
+      "genero": "masculino",
+      "email": "carlos.email",
+      "telefone": "1111-1111",
+      "localidade": "Manaus",
+      "uf": "São Paulo",
+      "escolaridade": "Superior"
+    },
+    {
+      "name": "katherine",
+      "cpf": "x",
+      "nascimento": "2021-10-06",
+      "pais": "venezuela",
+      "genero": "option2",
+      "email": "x",
+      "telefone": "x",
+      "localidade": "x",
+      "escolaridade": "x",
+      "uf": "x",
+      "id": 1633465051571
+    },
+    {
+      "name": "vanessa",
+      "cpf": "f",
+      "nascimento": "2021-10-11",
+      "pais": "d",
+      "genero": "d",
+      "email": "berdayesvane@hotmail.com",
+      "telefone": "77ahora1",
+      "localidade": "2",
+      "escolaridade": "x",
+      "uf": "d",
+      "id": 1633470105953
+    },
+    {
+      "name": "jsnjksdkdsn",
+      "cpf": "kmlkvsm",
+      "nascimento": "2021-10-19",
+      "pais": "nsv",
+      "genero": "option2",
+      "email": "kxcmksm",
+      "telefone": "lkmsdclsmcl",
+      "localidade": "kjnvkcn",
+      "escolaridade": "vsdnv",
+      "uf": "jnkvsd",
+      "id": 1633649253746
+    },
+    {
+      "name": "jsnjksdkdsn",
+      "cpf": "wefwef",
+      "nascimento": "2001-04-20",
+      "pais": "nsv",
+      "genero": "option2",
+      "email": "katherin1311@hotmail.com",
+      "telefone": "92984345346",
+      "localidade": "kjnvkcn",
+      "escolaridade": "vsdnv",
+      "uf": "jnkvsd",
+      "id": 1633737287889
+    },
+    {
+      "cpf": "fjnndskfmlksm",
+      "datadenacimento": "sklsdslkfsl",
+      "paisorigem": "skdkfksfl",
+      "genero": "sffslflkw",
+      "email": "kkmsm",
+      "telefone": "ssslclvm",
+      "ciudade": "kllklllllskmv",
+      "estado": "skd,skmn",
+      "escolaridade": "lksvslmlsç",
+      "id": 1633737287890
+    },
+    {
+      "cpf": "fdsvdfb",
+      "datadenacimento": "sdfnkjndfjkn",
+      "paisorigem": "kjddvçm",
+      "genero": "sdkjfskufhsl",
+      "email": "jssjdfs",
+      "telefone": "vvdl.f",
+      "ciudade": "mnjkdn",
+      "estado": "jnkdfn",
+      "escolaridade": "mdnkjdsnf",
+      "id": 1633737287891
+    },
+    {
+      "cpf": "MANAUS",
+      "datadenacimento": "sklsdslkfsl",
+      "paisorigem": "Brasil",
+      "genero": "fffeffe",
+      "email": "katherinyubi23@gmail.com",
+      "telefone": "+5592984345346",
+      "ciudade": "Manaus",
+      "estado": "skd,skmn",
+      "escolaridade": "tecnico medio",
+      "id": 1633737287892
+    }
+  ]
 }

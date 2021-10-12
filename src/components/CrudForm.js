@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
+import { HashRouter, NavLink, Route, Switch, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const initailForm = {
@@ -51,7 +52,7 @@ const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
       !form.escolaridade ||
       !form.uf
     ) {
-      alert("Datos incompletos");
+      alert("Dados incompletos");
       return;
     }
 
@@ -67,25 +68,25 @@ const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
   const handleReset = (e) => {
     setForm(initailForm);
     setDataToEdit(null);
-    history.push("/");
+    history.push("/dados");
   };
 
   return (
-    <div class="container-fluid">
-      <legend>Dados pessoais</legend>
-      <div class="container-fluid">
+    <div className="container-fluid">
+      <br />
+      <div className="container-fluid">
         <h3>{dataToEdit ? "Editar" : ""}</h3>
         <form onSubmit={handleSubmit}>
-          <div class="row">
-            <div class="col-6">
-              <div class="form-group">
-                <label for="name">
+          <div className="row">
+            <div className="col-6">
+              <div className="form-group">
+                <label htmlFor="name">
                   Nome completo
                   <input
                     type="text"
                     name="name"
                     placeholder="Digite seu nome completo"
-                    class="form-control"
+                    className="form-control"
                     onChange={handleChange}
                     value={form.name}
                   />
@@ -93,15 +94,15 @@ const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
               </div>
             </div>
 
-            <div class="col-3">
-              <div class="form-group">
-                <label for="name">
+            <div className="col-3">
+              <div className="form-group">
+                <label htmlFor="name">
                   CPF
                   <input
                     type="text"
                     name="cpf"
                     placeholder="Digite o seu CPF"
-                    class="form-control"
+                    className="form-control"
                     onChange={handleChange}
                     value={form.cpf}
                   />
@@ -109,14 +110,14 @@ const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
               </div>
             </div>
 
-            <div class="col-3">
-              <div class="form-group">
-                <label for="name">
+            <div className="col-3">
+              <div className="form-group">
+                <label htmlFor="name">
                   Data de nascimento
                   <input
                     type="date"
                     name="nascimento"
-                    class="form-control"
+                    className="form-control"
                     onChange={handleChange}
                     value={form.nascimento}
                   />
@@ -127,16 +128,16 @@ const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
 
           <br />
 
-          <div class="row">
-            <div class="col-3">
-              <div class="form-group">
-                <label for="name">
+          <div className="row">
+            <div className="col-3">
+              <div className="form-group">
+                <label htmlFor="name">
                   País de origem
                   <input
                     type="text"
                     name="pais"
                     placeholder="Digite o país de nascimento"
-                    class="form-control"
+                    className="form-control"
                     onChange={handleChange}
                     value={form.pais}
                   />
@@ -144,77 +145,63 @@ const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
               </div>
             </div>
 
-            <div class="col-3">
-                <div class="form-group">
+            <div className="col-3">
+                <div className="form-group">
                   {" "}
                   Gênero
-                  <div class="form-check">
+                  <div className="form-check">
                     <input
-                      class="form-check-input"
+                      className="form-check-input"
                       onChange={handleChange}
                       type="radio"
                       name="genero"
                       id="feminino"
-                      value="femenino"
-                      checked
+                      value="feminino"
+                      // checked
                     ></input>
-                    <label class="form-check-label" for="feminino">
-                      Femenino
+                    <label className="form-check-label" htmlFor="feminino">
+                      Feminino
                     </label>
                   </div>
-                  <div class="form-check">
+                  <div className="form-check">
                     <input
-                      class="form-check-input"
+                      className="form-check-input"
                       onChange={handleChange}
                       type="radio"
                       name="genero"
                       id="masculino"
-                      value="option2"
+                      value="masculino"
                     ></input>
                     <label className="form-check-label" htmlFor="masculino">
                       Masculino
                     </label>
                   </div>
-                  <div class="form-check">
+                  <div className="form-check">
                     <input
-                      class="form-check-input"
+                      className="form-check-input"
                       onChange={handleChange}
                       type="radio"
                       name="genero"
                       id="informar"
-                      value="informar"
+                      value="não informar"
                     ></input>
-                    <label class="form-check-label" for="informar">
+                    <label className="form-check-label" htmlFor="informar">
                       Desejo não informar
                     </label>
                   </div>
                 </div>
               </div>
-            {/* <div class="col-3">
-              <div class="form-group">
-                <label for="name">
-                  Gênero
-                  <input
-                    type="text"
-                    name="genero"
-                    placeholder="Digete seu gênero"
-                    class="form-control"
-                    onChange={handleChange}
-                    value={form.genero}
-                  />
-                </label>
-              </div>
-            </div> */}
+              
 
-            <div class="col-3">
-              <div class="form-group">
-                <label for="name">
+            <div className="col-3">
+              <div className="form-group">
+                <label htmlFor="name">
                   Email
                   <input
                     type="text"
                     name="email"
                     placeholder="Digite seu email"
-                    class="form-control"
+                    className="form-control"
                     onChange={handleChange}
                     value={form.email}
                   />
@@ -222,14 +209,14 @@ const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
               </div>
             </div>
 
-            <div class="col-3">
-              <div class="form-group">
-                <label for="name">
+            <div className="col-3">
+              <div className="form-group">
+                <label htmlFor="name">
                   Telefone
                   <input
                     type="text"
                     name="telefone"
-                    class="form-control"
+                    className="form-control"
                     placeholder="(22) 22222-2222"
                     onChange={handleChange}
                     value={form.telefone}
@@ -241,16 +228,16 @@ const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
 
           <br />
 
-          <div class="row">
-            <div class="col-3">
-              <div class="form-group">
-                <label for="name">
+          <div className="row">
+            <div className="col-3">
+              <div className="form-group">
+                <label htmlFor="name">
                   Cidade
                   <input
                     type="text"
                     name="localidade"
                     placeholder="Digite a cidade"
-                    class="form-control"
+                    className="form-control"
                     onChange={handleChange}
                     value={form.localidade}
                   />
@@ -258,15 +245,15 @@ const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
               </div>
             </div>
 
-            <div class="col-3">
-              <div class="form-group">
-                <label for="name">
+            <div className="col-3">
+              <div className="form-group">
+                <label htmlFor="name">
                   Estado
                   <input
                     type="text"
                     name="uf"
                     placeholder="Digite o estado"
-                    class="form-control"
+                    className="form-control"
                     onChange={handleChange}
                     value={form.uf}
                   />
@@ -274,15 +261,15 @@ const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
               </div>
             </div>
 
-            <div class="col-3">
-              <div class="form-group">
-                <label for="name">
+            <div className="col-3">
+              <div className="form-group">
+                <label htmlFor="name">
                   Escolaridade
                   <input
                     type="text"
                     name="escolaridade"
                     placeholder="Digite sua escolaridade"
-                    class="form-control"
+                    className="form-control"
                     onChange={handleChange}
                     value={form.escolaridade}
                   />
@@ -290,11 +277,11 @@ const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
               </div>
             </div>
 
-            <div class="col-3">
-              <div class="form-group align-self-start mr-3">
+            <div className="col-3">
+              <div className="form-group align-self-start mr-3">
                 <img
                   src=""
-                  class="rounded-circle align-self-start mr-3"
+                  className="rounded-circle align-self-start mr-3"
                   width="100"
                   alt="Foto da pessoa"
                 ></img>
@@ -304,25 +291,26 @@ const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
 
           <br />
 
-          <div class="col-12">
-            <div class="form-group text-sm-center">
-              <div class="container">
+          <div className="col-12">
+            <div className="form-group text-sm-center">
+              <div className="container">
                 <input
-                  class="btn btn-primary"
+                  className="btn btn-primary"
                   type="submit"
                   value="Cadastrar"
                 />{" "}
                 {""}
                 <input
-                  class="btn btn-secondary"
+                  className="btn btn-secondary"
                   type="reset"
-                  value="Limpiar"
+                  value="Limpar"
                   onClick={handleReset}
                 />
               </div>
             </div>
           </div>
         </form>
+        <Link to="/" className="btn btn-secondary botao "role="button">Página Inicial</Link>
       </div>
     </div>
   );
